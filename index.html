@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Template - Kemerdekaan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header with Indonesia's red and white theme */
+    header {
+      background-color: #d32f2f; /* Red from the flag */
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+      border-bottom: 5px solid #ffffff; /* White border for contrast */
+    }
+
+    /* Create two columns/boxes that float next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: auto;
+      background-color: #eeeeee;
+      padding: 20px;
+      border-right: 5px solid #d32f2f; /* Red border */
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #d32f2f;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+      background-color: #d32f2f;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    /* Article Section */
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #ffffff;
+      height: auto;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer with patriotic red background */
+    footer {
+      background-color: #d32f2f;
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other on smaller screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Hero Section (optional patriotic banner) */
+    .hero {
+      background-color: #d32f2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Hero Section with Kemerdekaan message -->
+<div class="hero">
+  <h1>Selamat hari kartini</h1>
+  <p>Memperingati hari kartini yang ke 61 tahun</p>
+</div>
+
+<!-- Main Content Section -->
+<header>
+  <h2>Raden ayu kartini ( RA Kartini )</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Jakarta</a></li>
+      <li><a href="#">Banten
+      </a></li>
+      <li><a href="#">Tangerang selatan</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Biodata Raden Ayu R.A Kartini</h1>
+    <p> Nama ; Raden Ayu Kartini
+        Panggilan : Raden Ayu Kartini
+        Tempat & tgl lahir ; jepang, jawa tengah ,21 april 1879
+        Tempat & tgl meninggal ; Rembang, jawa tengah , 17 september 1904
+        Dikenal sebagai ; Emansipasi wanita 
+        Agama ; islam 
+        Pasangan ; R.M.A.A Singgah djojo adhiningrat
+        Raden ajeng kartini seorang tokoh suku jawa dan pahlawan nasional indonesi ,kartini dikenal sebagai pelopor kebangkitan  perempuan pribumi ( emansipasi wanita) beliau adalah seseorang dari kalangan priyayi atau kelas bangsawan jawa, putri raden mas adipati ario sosroningrat
+        ibunya bernama M.A ngasirah, putri dari nyai haji siti aminah dan kyai haji madirono, seorang guru agama di telukawur 
+        Raden ayu adalah gelar untuk wanita bangsawan yang menikah  dengan pria bangsawan dari keturunan generasi kedua hingga ke delapan dari seorang raja jawa yang pernah memerintah sedang penggunaan gelar R.A ( Raden ajeng kartini) hanya berlaku ketika belum menikah. <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>&copy; 2025 Indonesia - R.A Kartini </p>
+</footer>
+
+</body>
+</html>
